@@ -1,5 +1,5 @@
 import React from "react";
-import microphoneIcon from "../assets/microphone.webp";
+import microphoneIcon from "../assets/Microphone.webp";
 
 const Voices = () => {
     return (
