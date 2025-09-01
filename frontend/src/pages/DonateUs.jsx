@@ -46,12 +46,13 @@ const DonateUs = () => {
 
         try {
             const response = await fetch('http://localhost:5000/api/create-order', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name, email, phone, amount }),
-            });
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ name, email, phone, amount }),
+});
+
 
             const data = await response.json();
 
@@ -159,7 +160,7 @@ const DonateUs = () => {
                             <p><span className="font-semibold text-gray-400">Account -</span> 12345678901</p>
                             <p><span className="font-semibold text-gray-400">IFSC Code -</span> SBIN0000123</p>
                         </div>
-                        <p className="mt-8 text-gray-400">Please email all details to <span className="text-orange-400">info@aryavartasanghcentraloffice.com</span> after Donations</p>
+                        <p className="mt-8 text-gray-400">Please email all details to <span className="text-orange-400">info@aryavartasangh.com</span> after Donations</p>
                     </div>
                 </div>
             </div>
